@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Union Square Butcher — Home</title>
+
+  <!-- Marx CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/marx-css/css/marx.min.css">
+
+  <style>
+    /* small helpers */
+    header { display:flex; justify-content:space-between; align-items:center; gap:1rem; padding:1rem 0; }
+    nav a { margin-left:.5rem; }
+    .hero { text-align: left; padding: 3rem 1rem; display:grid; gap:1rem; grid-template-columns: 1fr; }
+    @media(min-width:800px){ .hero { grid-template-columns: 1fr 380px; align-items:center; } }
+    .hero .lead { font-size:1.25rem; color:#444; }
+    .card { border-radius:6px; padding:1rem; box-shadow: 0 6px 18px rgba(0,0,0,0.06); }
+    .grid { display:grid; gap:1rem; grid-template-columns: 1fr; }
+    @media(min-width:700px){ .grid { grid-template-columns: repeat(3, 1fr); } }
+    .shop-img { width:100%; height:auto; border-radius:6px; object-fit:cover; }
+    footer { text-align:center; font-size:.9rem; margin:2rem 0; color:#666; }
+    .muted { color:#666; font-size:.95rem; }
+    .cta { display:inline-block; margin-right:.5rem; }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div>
+        <h1 style="margin:0">Union Square Butcher</h1>
+        <p class="muted" style="margin:0">Hand-cut meats · Local farms · NYC since 1998</p>
+      </div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div>
+        <h2 style="margin-top:0">Classic cuts. Modern craft.</h2>
+        <p class="lead">Family-run butchery in the heart of Manhattan. Dry-aged beef, house-made sausages, whole-animal butchery, and catering for events large and small.</p>
+
+        <p>
+          <a class="cta" href="about.html"><button>Learn more</button></a>
+          <a class="cta" href="contact.html"><button>Order / Catering</button></a>
+        </p>
+
+        <section class="card" aria-labelledby="weekly">
+          <h3 id="weekly">This week's specials</h3>
+          <ul>
+            <li>Dry-aged ribeye — limited supply</li>
+            <li>House fennel sausage — buy 2, save 10%</li>
+            <li>Whole chicken roasts — brined & ready</li>
+          </ul>
+        </section>
+      </div>
+
+      <aside class="card">
+        <img class="shop-img" src="https://source.unsplash.com/collection/142988/800x600" alt="Butcher shop interior">
+        <p style="margin:.5rem 0 0;"><strong>Visit:</strong> 45 Union Square West, New York, NY</p>
+        <p class="muted" style="margin:0">Mon–Fri: 8am–7pm · Sat: 8am–6pm · Sun: 9am–5pm</p>
+      </aside>
+    </section>
+
+    <section>
+      <h3>What we offer</h3>
+      <div class="grid" role="list">
+        <article class="card" role="listitem">
+          <h4>Dry-aging</h4>
+          <p class="muted">Expert dry-aging for richer flavor and tender texture. Ask the counter for recommendations.</p>
+        </article>
+
+        <article class="card" role="listitem">
+          <h4>Sausages & Charcuterie</h4>
+          <p class="muted">House recipes made in-house daily — classic, spicy, and seasonal flavors.</p>
+        </article>
+
+        <article class="card" role="listitem">
+          <h4>Catering & Events</h4>
+          <p class="muted">Live carving, platters, and custom menus for private events. Email orders or call for a quote.</p>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h3>From the counter</h3>
+      <blockquote class="card">
+        "Best steaks in the neighborhood — always friendly service and honest sourcing." — A. K.
+      </blockquote>
+    </section>
+
+    <footer>
+      <p>© Union Square Butcher — Proudly serving NYC since 1998</p>
+      <p class="muted">Phone: <a href="tel:+12125551234">(212) 555‑1234</a> · Email: <a href="mailto:hello@unionsquarebutcher.example">hello@unionsquarebutcher.example</a></p>
+    </footer>
+  </main>
+</body>
+</html>
