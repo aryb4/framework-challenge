@@ -10,8 +10,8 @@
 
   <style>
     header { display:flex; flex-direction:column; justify-content:center; align-items:center; gap:.25rem; padding:1rem 0; text-align:center; }
-    .hero { text-align: left; padding: 3rem 1rem; display:grid; gap:1rem; grid-template-columns: 1fr; }
-    @media(min-width:800px){ .hero { grid-template-columns: 1fr 380px; align-items:center; } }
+    .hero { display: grid; gap: 1rem; align-items: start; grid-template-columns: 1fr; text-align: left; padding: 3rem 1rem; }
+    @media(min-width:800px){ .hero { grid-template-columns: 1fr 380px; } }
     .hero .lead { font-size:1.25rem; color:#444; }
     .card { border-radius:6px; padding:1rem; box-shadow: 0 6px 18px rgba(0,0,0,0.06); }
     .grid { display:grid; gap:1rem; grid-template-columns: 1fr; }
@@ -31,7 +31,7 @@
       </div>
     </header>
 
-    <section class="hero">
+    <div class="hero">
       <div>
         <h2 style="margin-top:0">Classic cuts. Modern craft.</h2>
         <p class="lead">Family-run butchery in the heart of Manhattan. Dry-aged beef, house-made sausages, whole-animal butchery, and catering for events large and small.</p>
@@ -50,12 +50,12 @@
         </section>
       </div>
 
-      <aside class="card">
+      <aside class="card" style="align-self: start;">
         <img class="shop-img" src="https://butchersfancy.com/wp-content/uploads/2024/06/IMG_2542-1024x768.jpeg" alt="Butcher shop outside view">
         <p style="margin:.5rem 0 0;"><strong>Visit:</strong> 45 Union Square West, New York, NY</p>
         <p class="muted" style="margin:0">Mon–Fri: 8am–7pm · Sat: 8am–6pm · Sun: 9am–5pm</p>
       </aside>
-    </section>
+    </div>
 
     <section>
       <h3>What we offer</h3>
